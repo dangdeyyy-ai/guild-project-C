@@ -1,0 +1,60 @@
+.box1 {
+    max-width: 625px;
+    width: calc(50% - 10px);
+    .card {
+        width: calc((100% - 16px) / 2);
+    }
+    input {
+        width: 100%;
+        border: 0;
+        border-bottom: 1px solid #2e2e2e;
+        padding: 0 16px;
+        height: 48px;
+        border-radius: 10px;
+        background-color: #1d1d1d;
+        color: white;
+        font-size: 15px;
+        color-scheme: dark;
+    }
+    input::placeholder {
+        color: #ccd1d7b5;
+        font-size: 15px;
+    }
+    input:focus {
+        outline: none;
+    }
+    .primary {
+        width: 120px;
+    }
+}
+.box2 {
+    max-width: 625px;
+    width: calc(50% - 10px);
+}
+@media only screen and (max-width: 1024px) {
+    .section1 {
+        padding: 40px 0;
+    }
+    .box1 {
+        width: 100%;
+        max-width: none;
+    }
+}
+@media only screen and (max-width: 660px) {
+    .box1 {
+        .card {
+            width: 100%;
+            input {
+                font-size: 1rem;
+            }
+        }
+        .inputChange {
+            font-size: 1rem;
+        }
+        .primary {
+            width: 100%;
+            font-size: 15px;
+            padding: 8px;
+        }
+    }
+}

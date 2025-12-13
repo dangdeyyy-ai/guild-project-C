@@ -16,16 +16,16 @@ footer.innerHTML = `
                 <div class="flex-r t-flex-wrap g48 t-g20">
                     <div class="linkContainer">
                         <div class="linkType">
-                            Links
-                        </div>
-                        <div class="link">
                             Homepage
                         </div>
                         <div class="link">
-                            Activities
+                            Classes
                         </div>
                         <div class="link">
-                            Contact us
+                            Trainers
+                        </div>
+                        <div class="link">
+                            Free Sign Up
                         </div>
                     </div>
                     <div class="linkContainer">
@@ -78,8 +78,9 @@ header.innerHTML = `
             </div>
             <menu class="PC">
                 <a href="../../pages/homepage/" id="home">Homepage</a>
-                <a href="../../pages/activities/" id="activities">Activities</a>
-                <a href="../../pages/contactUs/" id="contactUs">Contact us</a>
+                <a href="../../pages/class/" id="activities">Classes</a>
+                <a href="../../pages/trainer/" id="contactUs">Trainer</a>
+                <a href="../../pages/signUpFree/" id="contactUs">Trial Class</a>
             </menu>
             <div class="flex-r g10 a-center">
                 <button class="secondary signUp">Sign Up</button>
@@ -105,8 +106,9 @@ function menuAction() {
             </div>
             <menu class="PC Tablet Mobile">
                 <a href="../../pages/homepage/" id="home">Homepage</a>
-                <a href="../../pages/activities/" id="activities">Activities</a>
-                <a href="../../pages/contactUs/" id="contactUs">Contact us</a>
+                <a href="../../pages/class/" id="activities">Classes</a>
+                <a href="../../pages/trainer/" id="contactUs">Trainer</a>
+                <a href="../../pages/signUpFree/" id="contactUs">Trial Class</a>
             </menu>
             <div class="flex-r g10 a-center PC">
                 <button class="secondary signUp">Sign Up</button>
@@ -123,8 +125,9 @@ function menuAction() {
             </div>
             <menu class="PC Tablet Mobile menuOff">
                 <a href="../../pages/homepage/" id="home">Homepage</a>
-                <a href="../../pages/activities/" id="activities">Activities</a>
-                <a href="../../pages/contactUs/" id="contactUs">Contact us</a>
+                <a href="../../pages/class/" id="activities">Classes</a>
+                <a href="../../pages/trainer/" id="contactUs">Trainer</a>
+                <a href="../../pages/signUpFree/" id="contactUs">Trial Class</a>
             </menu>
             <div class="flex-r g10 a-center">
                 <button class="secondary signUp">Sign Up</button>
@@ -148,8 +151,9 @@ function initMenu() {
             <img src="/assets/svg/Menu.svg" class="Tablet Mobile hamburger">
             <menu>
                 <a href="../../pages/homepage/" id="home">Homepage</a>
-                <a href="../../pages/activities/" id="activities">Activities</a>
-                <a href="../../pages/contactUs/" id="contactUs">Contact us</a>
+                <a href="../../pages/class/" id="activities">Classes</a>
+                <a href="../../pages/trainer/" id="contactUs">Trainer</a>
+                <a href="../../pages/signUpFree/" id="contactUs">Trial Class</a>
             </menu>
         </div>
         `
@@ -162,8 +166,9 @@ function initMenu() {
             </div>
             <menu class="PC">
                 <a href="../../pages/homepage/" id="home">Homepage</a>
-                <a href="../../pages/activities/" id="activities">Activities</a>
-                <a href="../../pages/contactUs/" id="contactUs">Contact us</a>
+                <a href="../../pages/class/" id="activities">Classes</a>
+                <a href="../../pages/trainer/" id="contactUs">Trainer</a>
+                <a href="../../pages/signUpFree/" id="contactUs">Trial Class</a>
             </menu>
             <div class="flex-r g10 a-center">
                 <button class="secondary signUp">Sign Up</button>
