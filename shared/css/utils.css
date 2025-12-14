@@ -150,6 +150,16 @@ menu {
     flex-direction: row;
     gap: 16px;
 }
+@media only screen and (max-width: 660px) {
+    menu {
+        display: flex;
+        flex-direction: row;
+        gap: 5px;
+        a {
+            font-size: 10px;
+        }
+    }
+}
 .hamburger {
     cursor: pointer;
 }
