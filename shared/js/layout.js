@@ -57,16 +57,6 @@ footer.innerHTML = `
                         </div>
                     </div>
                 </div>
-                <div class="linkContainer">
-                    <div class="linkType">
-                        Our socials
-                    </div>
-                    <div class="flex-r g16">
-                        <img src="/assets/svg/facebook.svg">
-                        <img src="/assets/svg/twitter.svg">
-                        <img src="/assets/svg/youtube.svg">
-                    </div>
-                </div>
             </div>
         </div>
 `
@@ -74,7 +64,6 @@ header.innerHTML = `
         <div class="container flex-r j-between">
             <img src="/assets/svg/Menu.svg" class="Tablet Mobile hamburger">
             <div class="logo">
-
             </div>
             <menu class="PC">
                 <a href="../../pages/homepage/" id="home">Homepage</a>
@@ -189,3 +178,22 @@ menu[0].addEventListener("click", () => {
     menuAction()
 })
 initMenu()
+function createModal(content) {
+    let title = document.querySelector("#title"), 
+        description = document.querySelector("#description"),
+        button = document.querySelector("#button")
+    title.innerHTML = content.title
+    description.innerHTML = content.description
+    button.className = content.button?.type || "tertiary"
+    button.textContent = content.button?.description || "blank message"
+    let backdrop = document.querySelector(".backdrop")
+    backdrop.style.display = "flex"
+    return false;
+}
+let backdrop = document.querySelector(".backdrop")
+backdrop.addEventListener("click", (event) => {
+    event.preventDefault()
+    if (event.target === backdrop) {
+        backdrop.style.display = "none"
+    }
+})

@@ -3,16 +3,226 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Farland Supersymmetry</title>
+    <title>Document</title>
     <link rel="stylesheet" href="dashboard.css">
-    <link rel="stylesheet" href="/shared/css/utils.css">
 </head>
 <body>
-    <header></header>
-    <main>
+    <header>
+        <div class="wrap-header">
+            <div class="logo">Logo</div>
+            <div class="wrap-side">
+                <div class="nav">
+                    <div class="item">Tổng quan</div>
+                    <div class="item">Duyệt lịch</div>
+                    <div class="item">Lớp học</div>
+                    <div class="item">Huấn luyện viên</div>
+                </div>
+                <div class="admin-space">
+                    <div class="hello-user">Hello Admin</div>
+                    <div class="avt-admin">Logo</div>
+                </div>
+            </div>
+        </div>
+        
+    </header>
+    <div class="section-1">
+        <div class="wrap">
+            <div class="head">
+                <div class="left">
+                    <div class="title">Dashboard tổng quát</div>
+                    <div class="text">Cập nhật lúc 08:30 sáng, 12/14/2025</div>
+                </div>
+                <div class="right">
+                    <div class="import">Xuất báo cáo</div>
+                    <div class="creat-notic">Tạo báo cáo</div>
+                </div>
+            </div>
+            <div class="content">
+                <div class="box">
+                    <div class="line-1">
+                        <div class="left">
+                            <div class="title">Học viên mới</div>
+                            <div class="text">124</div>
+                        </div>
+                        <div class="right"><img src="/assets/" alt=""></div>
+                    </div>
+                    <div class="up-line">+12% so với tuần trước</div>
+                </div>
+                <div class="box">
+                    <div class="line-1">
+                        <div class="left">
+                            <div class="title">Học viên mới</div>
+                            <div class="text">124</div>
+                        </div>
+                        <div class="right"><img src="/assets/" alt=""></div>
+                    </div>
+                    <div class="up-line">+12% so với tuần trước</div>
+                </div>
+                <div class="box">
+                    <div class="line-1">
+                        <div class="left">
+                            <div class="title">Học viên mới</div>
+                            <div class="text">124</div>
+                        </div>
+                        <div class="right"><img src="/assets/" alt=""></div>
+                    </div>
+                    <div class="up-line">+12% so với tuần trước</div>
+                </div>
+                <div class="box">
+                    <div class="line-1">
+                        <div class="left">
+                            <div class="title">Học viên mới</div>
+                            <div class="text">124</div>
+                        </div>
+                        <div class="right"><img src="/assets/" alt=""></div>
+                    </div>
+                    <div class="up-line">+12% so với tuần trước</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section-2">
+        <div class="wrap">
+            <div class="text">Cần duyệt gấp</div>
+            <div class="content">
+                <table>
+    <thead>
+        <tr>
+            <th>Học viên</th>
+            <th>Lớp đăng ký</th>
+            <th>Thời gian</th>
+            <th>Trạng thái</th>
+            <th style="text-align: right;">Hành động</th>
+        </tr>
+    </thead>
+    <tbody>
+        <!-- Dòng 1: Chờ duyệt -->
+        <tr>
+            <td>
+                <div class="student-info">
+                    <div class="student-avatar">H</div>
+                    <div>
+                        <div class="student-name">Hoàng Minh</div>
+                        <div class="student-id">ID: #101</div>
+                    </div>
+                </div>
+            </td>
+            <td>
+                <div class="student-name" style="font-size:14px">Yoga Cơ Bản</div>
+                <div class="student-id">HLV: Knight Wolf</div>
+            </td>
+            <td style="color:#6b7280; font-size:14px">
+                <!-- Thay icon đồng hồ bằng SVG -->
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align: middle; margin-right: 4px;"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                08:00 - 15/12/2023
+            </td>
+            <td><span class="status-badge status-pending">Chờ duyệt</span></td>
+            <td style="text-align: right;">
+                <button class="action-btn btn-approve" title="Duyệt">
+                    <!-- Icon SVG dấu tích V -->
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                </button>
+                <button class="action-btn btn-reject" title="Hủy">
+                    <!-- Icon SVG dấu X -->
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+                </button>
+            </td>
+        </tr>
+        
+        <!-- Dòng 2: Đã duyệt -->
+        <tr>
+            <td>
+                <div class="student-info">
+                    <div class="student-avatar" style="background-color:#e0e7ff; color:#4f46e5">L</div>
+                    <div>
+                        <div class="student-name">Lê Lan</div>
+                        <div class="student-id">ID: #102</div>
+                    </div>
+                </div>
+            </td>
+            <td>
+                <div class="student-name" style="font-size:14px">Cardio HIIT</div>
+                <div class="student-id">HLV: Trần Thị B</div>
+            </td>
+            <td style="color:#6b7280; font-size:14px">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align: middle; margin-right: 4px;"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                17:30 - 15/12/2023
+            </td>
+            <td><span class="status-badge status-confirmed">Đã duyệt</span></td>
+            <td style="text-align: right;">
+                <span style="font-size: 12px; color: #9ca3af; font-style: italic;">Đã hoàn tất</span>
+            </td>
+        </tr>
+        
+        <!-- Dòng 3: Chờ duyệt -->
+        <tr>
+            <td>
+                <div class="student-info">
+                    <div class="student-avatar">Đ</div>
+                    <div>
+                        <div class="student-name">Đặng Thảo</div>
+                        <div class="student-id">ID: #103</div>
+                    </div>
+                </div>
+            </td>
+            <td>
+                <div class="student-name" style="font-size:14px">Zumba Dance</div>
+                <div class="student-id">HLV: Phạm Minh D</div>
+            </td>
+            <td style="color:#6b7280; font-size:14px">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align: middle; margin-right: 4px;"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                19:00 - 16/12/2023
+            </td>
+            <td><span class="status-badge status-pending">Chờ duyệt</span></td>
+            <td style="text-align: right;">
+                <button class="action-btn btn-approve">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                </button>
+                <button class="action-btn btn-reject">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+                </button>
+            </td>
+        </tr>
 
-    </main>
-    <footer></footer>
+        <!-- Dòng 4: Chờ duyệt -->
+        <tr>
+            <td>
+                <div class="student-info">
+                    <div class="student-avatar">V</div>
+                    <div>
+                        <div class="student-name">Vũ Long</div>
+                        <div class="student-id">ID: #104</div>
+                    </div>
+                </div>
+            </td>
+            <td>
+                <div class="student-name" style="font-size:14px">Bodybuilding</div>
+                <div class="student-id">HLV: Lê Hoàng C</div>
+            </td>
+            <td style="color:#6b7280; font-size:14px">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align: middle; margin-right: 4px;"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                18:00 - 16/12/2023
+            </td>
+            <td><span class="status-badge status-pending">Chờ duyệt</span></td>
+            <td style="text-align: right;">
+                <button class="action-btn btn-approve">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                </button>
+                <button class="action-btn btn-reject">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+                </button>
+            </td>
+        </tr>
+    </tbody>
+</table>
+            </div>
+        </div>
+    </div>
+    <div class="section-3">
+        <div class="wrap"></div>
+    </div>
+    <div class="section-4">
+        <div class="wrap"></div>
+    </div>
 </body>
-<script src="/shared/js/layout.js"></script>
 </html>

@@ -13,6 +13,12 @@
 }
 .section3 {
     .card {
+        padding: 10px;
+        display: flex;
+        align-items: flex-end;
+        --bg: url(/);
+        background: linear-gradient(to bottom,transparent, rgba(0, 0, 0, 0.842) 90%), var(--bg);
+        background-size: cover;
         width: calc(100% / 4 - 10px * 3 / 4);
         min-width: 200px;
         height: 200px;
@@ -35,8 +41,14 @@
 }
 .section4 {
     .card {
+        --bg: url(/);
+        background: linear-gradient(to bottom,transparent 70%, rgba(109, 109, 109, 0.842) 100%), var(--bg);
         width: calc(100% / 4 - 10px * 3 / 4);
+        display: flex;
+        padding: 10px;
+        align-items: flex-end;
         min-width: 200px;
+        background-size: cover;
         height: 250px;
         background-color: aliceblue;
         border-radius: 10px;

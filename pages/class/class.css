@@ -1,0 +1,59 @@
+.section1 {
+    background-image: url(/assets/background/background.png);
+    height: 30vh;
+    min-height: 200px;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    padding: 10px;
+    align-items: flex-end;
+    .filter {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(to top,transparent, rgba(0, 0, 0, 0.411) 30%);
+        z-index: 0;
+        bottom: 0;
+    }
+}
+.section2 {
+    .container {
+        .card {
+            padding: 10px;
+            background-color: rgb(34, 34, 34);
+            border: 1px solid white;
+            border-radius: 5px;
+            width: calc(100% / 2 - 15px / 2);
+            height: 250px;
+            .image {
+                width: 50%;
+                background-size: cover;
+            }
+            .content {
+                height: 100%;
+            }
+        }
+    }
+}
+@media only screen and (max-width: 1024px) {
+    .section2 {
+        .container {
+            .card {
+                height: 200px;
+                .image {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: 660px) {
+    .section2 {
+        .container {
+            .card {
+                width: 100%;
+                height: 150px;
+            }
+        }
+    }
+}

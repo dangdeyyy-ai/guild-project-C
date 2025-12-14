@@ -10,6 +10,18 @@
 <body>
     <header id="header"></header>
     <main>
+        <div class="backdrop">
+            <div class="modal flex-c a-center j-between">
+                <div class="f24 w7" id="title">
+                </div>
+                <div class="f18 line24 w5 text-center" id="description">
+
+                </div>
+                <button class="tertiary" id="button" onclick="backdrop.style.display = `none`">
+
+                </button>
+            </div>
+        </div>
         <section class="section1">
             <div class="container">
                 <div class="j-center">
@@ -27,6 +39,7 @@
                                 <div class="flex-c g8 card">
                                     <div class="f16 w4">First Name</div>
                                     <input
+                                        id="firstName"
                                         type="text"
                                         placeholder="First name"
                                         class="input"
@@ -37,6 +50,7 @@
                                 <div class="flex-c g8 card">
                                     <div class="f16 w4">Last Name</div>
                                     <input
+                                        id="lastName"
                                         type="text"
                                         placeholder="Last name"
                                         class="input"
@@ -70,6 +84,7 @@
                             <div class="flex-c g8">
                                 <div class="f16 w4">When can you come?</div>
                                 <input
+                                    id="date"
                                     type="date"
                                     placeholder="DD/MM/YYYY"
                                     max="2026-02-01"

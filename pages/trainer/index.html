@@ -10,10 +10,61 @@
 <body>
     <header id="header"></header>
     <main>
+        <div class="backdrop">
+            <div class="modal flex-r g10">
+                <div class="left" id="trainerImage">
 
+                </div>
+                <div class="right flex-c a-start j-between">
+                    <div class="star a-center flex-r g10">
+                        <span class="label f15">
+                            Favorite trainer
+                        </span>
+                        <img id="star" src="/assets/svg/star-blank.svg">
+                    </div>
+                    <div class="flex-c g20">
+                        <div class="flex-c g5">
+                            <div class="f28 w7" id="title">
+                            </div>
+                            <div class="f18 line24 w5" id="description">
+        
+                            </div>
+                        </div>
+                        <div class="f18 line24 w5" id="social">
+
+                        </div>
+                    </div>
+                    <button class="tertiary" id="button" onclick="backdrop.style.display = `none`">
+
+                    </button>
+                </div>
+            </div>
+        </div>
+        <section class="section1">
+            <div class="filter">
+
+            </div>
+            <div class="flex-c g20 a-end" style="z-index: 1;">
+                <div class="text-center">
+                    <span class="f32 w7">
+                        Our trainer
+                    </span><br>
+                    <span class="flex-r g10">
+                        <a href="/pages/homepage/">Homepage</a> 
+                        <img src="/assets/svg/arrow-forward-w.svg">
+                        <a href="/pages/trainer/">Trainer</a>
+                    </span>
+                </div>
+            </div>
+        </section>
+        <section class="section2">
+            <div class="container flex-r flex-wrap g10 j-center" id="trainerInfo">
+            </div>
+        </section>
     </main>
     <footer id="footer"></footer>
 </body>
-<script src="index.js"></script>
 <script src="/shared/js/layout.js"></script>
+<script src="/shared/js/trainer.js"></script>
+<script src="index.js"></script>
 </html>
