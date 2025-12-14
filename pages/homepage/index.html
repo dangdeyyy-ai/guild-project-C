@@ -4,29 +4,62 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Farland Supersymmetry</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="homepage.css">
     <link rel="stylesheet" href="/shared/css/utils.css">
 </head>
 <body>
     <header id="header"></header>
     <main>
+        <div class="backdrop">
+            <div class="modal flex-r g10">
+                <div class="left" id="trainerImage">
+
+                </div>
+                <div class="right flex-c a-end j-between">
+                    <div class="star a-center flex-r g10">
+                        <span class="label f15">
+                            Favorite trainer
+                        </span>
+                        <img id="star" src="/assets/svg/star-blank.svg">
+                    </div>
+                    <div class="flex-c g20" style="width: 100%;">
+                        <div class="flex-c g5">
+                            <div class="f28 w7" id="title">
+                            </div>
+                            <div class="f18 line24 w5" id="description">
+        
+                            </div>
+                        </div>
+                        <div class="f18 line24 w5" id="social">
+
+                        </div>
+                    </div>
+                    <button class="tertiary" id="button" onclick="backdrop.style.display = `none`">
+
+                    </button>
+                </div>
+            </div>
+        </div>
         <section class="section1">
             <div class="filter">
 
             </div>
-            <div class="flex-c g20 a-center" style="z-index: 1;">
-                <div class="f48 w7 t-f30 m-f24">
-                    Build Your <span class="c-accent">Strength</span>. Shape Your <span class="c-secondary">Future</span>
+            <div class="flex-c g20 a-center" style="z-index: 1; padding: 10px;">
+                <div class="f48 w7 t-f30 m-f20 text-center">
+                    Build Your <span class="c-accent">Strength</span>. Shape Your <span class="c-accent">Future</span>
                 </div>
                 <div class="text-center">
-                    <span class="f32 t-f25 m-f20 w5">
-                        Modern training facility just for <span class="f36 c-accent w7">YOU</span>
+                    <span class="f32 t-f25 m-f20 w5 text-center">
+                        Modern training facility just for <span class="f36 t-f30 m-f23 c-accent w7">YOU</span>
                     </span><br>
                     <span class="f24 t-f18 m-f16 w5">
                         Your transformation starts here and we're glad to be a part of it
                     </span>
                 </div>
-                <button class="primary" onclick="window.location.assign('/pages/class')">
+                <button class="primary" onclick="window.location.assign('/pages/class/')">
                     Start today <img src="/assets/svg/arrow-forward-w.svg">
                 </button>
             </div>
@@ -117,7 +150,7 @@
                         </div>
                     </div>
                 </div>
-                <button class="primary" style="align-self: flex-start;" onclick="window.location.assign('/pages/class')">
+                <button class="primary" style="align-self: flex-start;" onclick="window.location.assign('/pages/class/')">
                     See all of our classes <img src="/assets/svg/arrow-forward-w.svg">
                 </button>
             </div>
@@ -136,28 +169,28 @@
                     Our professional trainer will help you with a smile. No need to be afraid of change or not knowing what to do, we will be your companions
                 </div>
                 <div class="flex-r g10 flex-wrap">
-                    <div class="card" style="--bg: url(/assets/trainer/mattRoberts.png)">
+                    <div class="card trainer" id="Knight Wolf" style="--bg: url(/assets/trainer/mattRoberts.png)">
                         <div class="f20 w7">
                             Knight Wolf
                         </div>
                     </div>
-                    <div class="card" style="--bg: url(/assets/trainer/kaylaItsines.png)">
+                    <div class="card trainer" id="Kayla Itsines" style="--bg: url(/assets/trainer/kaylaItsines.png)">
                         <div class="f20 w7">
                             Kayla Itsines
                         </div>
                     </div>
-                    <div class="card" style="--bg: url(/assets/trainer/shaunStafford.png)">
+                    <div class="card trainer" id="Shaun Stafford" style="--bg: url(/assets/trainer/shaunStafford.png)">
                         <div class="f20 w7">
                             Shaun Stafford
                         </div>
                     </div>
-                    <div class="card" style="--bg: url(/assets/trainer/minhHoang.png)">
+                    <div class="card trainer" id="Minh Hoang" style="--bg: url(/assets/trainer/minhHoang.png)">
                         <div class="f20 w7">
                             Minh Hoang
                         </div>
                     </div>
                 </div>
-                <button class="primary" style="align-self: flex-start;" onclick="window.location.assign('/pages/trainer')">
+                <button class="primary" style="align-self: flex-start;" onclick="window.location.assign('/pages/trainer/')">
                     See all of our trainers <img src="/assets/svg/arrow-forward-w.svg">
                 </button>
             </div>
@@ -173,13 +206,14 @@
                     Take the first step of becoming a better, healthier you is not always easy, but we trust that you will give us a chance.<br>
                     Request a trial class and experience our one of our classes for free. You can be the judge of us.
                 </div>
-                <button class="primary" onclick="window.location.assign('/pages/signUpFree')">Request a trial class <img src="/assets/svg/arrow-forward-w.svg"></button>
+                <button class="primary" onclick="window.location.assign('/pages/signUpFree/')">Request a trial class <img src="/assets/svg/arrow-forward-w.svg"></button>
             </div>
         </section>
     </main>
     <footer id="footer"></footer>
 </body>
-<script src="index.js"></script>
+<script src="/shared/js/trainer.js"></script>
 <script src="/shared/js/classes.js"></script>
 <script src="/shared/js/layout.js"></script>
+<script src="index.js"></script>
 </html>

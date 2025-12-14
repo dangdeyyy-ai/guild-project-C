@@ -13,7 +13,7 @@ footer.innerHTML = `
                 </div>
             </div>
             <div class="flex-r t-flex-c g20 j-between">
-                <div class="flex-r t-flex-wrap g48 t-g20">
+                <div class="flex-r t-flex-wrap j-between g20" style="width: 100%">
                     <div class="linkContainer">
                         <div class="linkType">
                             Homepage
@@ -54,6 +54,16 @@ footer.innerHTML = `
                         </div>
                         <div class="link">
                             Gmail: abluecat@waitingforever.com
+                        </div>
+                    </div>
+                    <div class="linkContainer">
+                        <div class="linkType">
+                            Socials
+                        </div>
+                        <div class="flex-r g16">
+                            <img src="/assets/svg/facebook.svg">
+                            <img src="/assets/svg/twitter.svg">
+                            <img src="/assets/svg/youtube.svg">
                         </div>
                     </div>
                 </div>

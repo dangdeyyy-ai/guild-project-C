@@ -17,15 +17,20 @@
     }
 }
 .section2 {
+    .active {
+        text-decoration: underline;
+        text-underline-offset: 7px;
+    }
     .container {
         .card {
             padding: 10px;
-            background-color: rgb(34, 34, 34);
+            background-color: rgb(70, 70, 70);
             border: 1px solid white;
             border-radius: 5px;
             width: calc(100% / 2 - 15px / 2);
             height: 250px;
             .image {
+                border-radius: 5px;
                 width: 50%;
                 background-size: cover;
             }

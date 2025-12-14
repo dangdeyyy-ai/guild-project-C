@@ -1,8 +1,14 @@
 let container = document.querySelector("#trainerInfo")
 for (key in trainer) {
     console.log(container)
+    if (trainer[key].favorite) {
+
+    }
     container.innerHTML += `
     <div class="card" id="${key}" style="--bg: url(${trainer[key].image})">
+        <div class="favorite" data-name="${key}">
+            <img src="/assets/svg/star-filled.svg">
+        </div>
         <div class="flex-c g10 info">
             <div class="f25 w7">
                 ${key}
@@ -31,12 +37,15 @@ function showTrainerModal(content) {
     }
     image.style.backgroundImage = `url(${content.image})`
     title.innerHTML = content.name
-    description.innerHTML = `${content.expertise} (Rating ${content.rating})`
+    description.innerHTML = `
+        ${content.expertise}<br>
+        <span class="f24 w7">Rating <span class="c-accent">${content.rating}</span></span>
+        `
     button.className = content.button?.type || "tertiary"
     button.textContent = content.button?.description || "Close"
     socials.innerHTML = `
-        <div class="w7 f15">Phone number </div> <span>${content.phone}</span>
-        <div class="w7 f15">Email </div> <span>${content.email}</span>
+        <span class="w7 f15">Phone number:</span> <span>${content.phone}</span><br>
+        <span class="w7 f15">Email:</span> <span>${content.email}</span>
         <div class="linkContainer">
             <div class="w7 f15">
                 Socials
@@ -53,6 +62,7 @@ function showTrainerModal(content) {
     return false;
 }
 let card = document.querySelectorAll(".card")
+let favorite = document.querySelectorAll(".favorite")
 card.forEach((e) => {
     e.addEventListener("click", () => {
         showTrainerModal(trainer[e.id])
@@ -62,8 +72,18 @@ star.addEventListener("click", () => {
         trainer[current].favorite = !trainer[current].favorite
         if (trainer[current].favorite) {
             star.src = "/assets/svg/star-filled.svg"
+            favorite.forEach((e) => {
+                if (e.dataset.name == current) {
+                    e.style.display = "block"
+                }
+            })
         } else {
             star.src = "/assets/svg/star-blank.svg"
+            favorite.forEach((e) => {
+                if (e.dataset.name == current) {
+                    e.style.display = "none"
+                }
+            })
         }
         console.log(trainer[current].favorite, current)
-    })
+})

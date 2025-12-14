@@ -8,6 +8,15 @@ let classes = {
             totalSlots: "45",
             participant: "24",
             time: "14/12 (14:30 - 17:00)"
+        },
+        class2: {
+            background : "/assets/classes/swimming/swimming.jpg",
+            name: "Swimming Trainning",
+            trainer: "Knight Wolf",
+            status: "open",
+            totalSlots: "45",
+            participant: "24",
+            time: "18/12 (14:30 - 17:00)"
         }
     },
     yoga: {
@@ -67,7 +76,7 @@ let classes = {
             status: "open",
             totalSlots: "45",
             participant: "42",
-            time: "14/12 (14:30 - 17:00)"
+            time: "14/12 (17:30 - 19:00)"
         },
         class2: {
             background : "/assets/classes/boxing/box2.jpg",
