@@ -76,10 +76,10 @@ header.innerHTML = `
             <div class="logo">
             </div>
             <menu class="PC">
-                <a href="../../pages/homepage/" id="home">Homepage</a>
-                <a href="../../pages/class/" id="activities">Classes</a>
-                <a href="../../pages/trainer/" id="contactUs">Trainer</a>
-                <a href="../../pages/signUpFree/" id="contactUs">Trial Class</a>
+                <a class="pageLink" href="../../pages/homepage/" id="home">Homepage</a>
+                <a class="pageLink" href="../../pages/class/" id="activities">Classes</a>
+                <a class="pageLink" href="../../pages/trainer/" id="contactUs">Trainer</a>
+                <a class="pageLink" href="../../pages/signUpFree/" id="contactUs">Trial Class</a>
             </menu>
             <div class="flex-r g10 a-center">
                 <button class="secondary signUp">Sign Up</button>
@@ -104,10 +104,10 @@ function menuAction() {
 
             </div>
             <menu class="PC Tablet Mobile">
-                <a href="../../pages/homepage/" id="home">Homepage</a>
-                <a href="../../pages/class/" id="activities">Classes</a>
-                <a href="../../pages/trainer/" id="contactUs">Trainer</a>
-                <a href="../../pages/signUpFree/" id="contactUs">Trial Class</a>
+                <a class="pageLink" href="../../pages/homepage/" id="home">Homepage</a>
+                <a class="pageLink" href="../../pages/class/" id="activities">Classes</a>
+                <a class="pageLink" href="../../pages/trainer/" id="contactUs">Trainer</a>
+                <a class="pageLink" href="../../pages/signUpFree/" id="contactUs">Trial Class</a>
             </menu>
             <div class="flex-r g10 a-center PC">
                 <button class="secondary signUp">Sign Up</button>
@@ -123,10 +123,10 @@ function menuAction() {
 
             </div>
             <menu class="PC Tablet Mobile menuOff">
-                <a href="../../pages/homepage/" id="home">Homepage</a>
-                <a href="../../pages/class/" id="activities">Classes</a>
-                <a href="../../pages/trainer/" id="contactUs">Trainer</a>
-                <a href="../../pages/signUpFree/" id="contactUs">Trial Class</a>
+                <a class="pageLink" href="../../pages/homepage/" id="home">Homepage</a>
+                <a class="pageLink" href="../../pages/class/" id="activities">Classes</a>
+                <a class="pageLink" href="../../pages/trainer/" id="contactUs">Trainer</a>
+                <a class="pageLink" href="../../pages/signUpFree/" id="contactUs">Trial Class</a>
             </menu>
             <div class="flex-r g10 a-center">
                 <button class="secondary signUp">Sign Up</button>
@@ -149,10 +149,10 @@ function initMenu() {
         <div class="container flex-r j-between">
             <img src="/assets/svg/Menu.svg" class="Tablet Mobile hamburger">
             <menu>
-                <a href="../../pages/homepage/" id="home">Homepage</a>
-                <a href="../../pages/class/" id="activities">Classes</a>
-                <a href="../../pages/trainer/" id="contactUs">Trainer</a>
-                <a href="../../pages/signUpFree/" id="contactUs">Trial Class</a>
+                <a class="pageLink" href="../../pages/homepage/" id="home">Homepage</a>
+                <a class="pageLink" href="../../pages/class/" id="activities">Classes</a>
+                <a class="pageLink" href="../../pages/trainer/" id="contactUs">Trainer</a>
+                <a class="pageLink" href="../../pages/signUpFree/" id="contactUs">Trial Class</a>
             </menu>
         </div>
         `
@@ -164,10 +164,10 @@ function initMenu() {
 
             </div>
             <menu class="PC">
-                <a href="../../pages/homepage/" id="home">Homepage</a>
-                <a href="../../pages/class/" id="activities">Classes</a>
-                <a href="../../pages/trainer/" id="contactUs">Trainer</a>
-                <a href="../../pages/signUpFree/" id="contactUs">Trial Class</a>
+                <a class="pageLink" href="../../pages/homepage/" id="home">Homepage</a>
+                <a class="pageLink" href="../../pages/class/" id="activities">Classes</a>
+                <a class="pageLink" href="../../pages/trainer/" id="contactUs">Trainer</a>
+                <a class="pageLink" href="../../pages/signUpFree/" id="contactUs">Trial Class</a>
             </menu>
             <div class="flex-r g10 a-center">
                 <button class="secondary signUp">Sign Up</button>
@@ -207,3 +207,12 @@ backdrop.addEventListener("click", (event) => {
         backdrop.style.display = "none"
     }
 })
+const links = document.querySelectorAll(".pageLink");
+const currentTab = window.location.pathname;
+
+links.forEach((link) => {
+    console.log(currentTab, link.getAttribute("href").replace("../..", " "), link.getAttribute("href").replace("../..", "") == currentTab )
+    if (link.getAttribute("href").replace("../..", "") == currentTab) {
+        link.classList.add("active");
+    }
+});
